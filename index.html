@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Developer Profile</title>
+  </head>
+  <body>
+    <header>
+      <!-- 1. Profile image with meaningful alternative text and explicit dimensions -->
+      <img
+        src="./images/profile.jpg"
+        alt="Portrait of Alex Johnson, a software engineering student smiling in a modern office setup"
+        width="150"
+        height="150" />
+      <h1>Alex Johnson</h1>
+      <p>Aspiring Full-Stack Developer & Tech Enthusiast</p>
+    </header>
+
+    <main>
+      <!-- 2. Genuinely decorative image with an empty alt attribute -->
+      <img
+        src="./images/decorative.jpg"
+        alt=""
+        width="100"
+        height="100"
+        aria-hidden="true" />
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Welcome to my developer portfolio! I am currently building
+          foundational web skills, focusing heavily on accessibility, semantic
+          markup, and modern multimedia integration.
+        </p>
+      </section>
+
+      <!-- 3. <figure> with a related <figcaption> -->
+      <section>
+        <h2>My Workspace Setup</h2>
+        <figure>
+          <img
+            src="./images/workspace.jpg"
+            alt="A clean desk featuring a mechanical keyboard, dual monitors displaying code, and a warm desk lamp"
+            width="600"
+            height="400" />
+          <figcaption>
+            Figure 1: My ergonomic development workstation where I code and test
+            web applications daily.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- 4 & 5. Native <audio> and <video> elements with controls, sources, and useful fallback text -->
+      <section>
+        <h2>Media Showcase</h2>
+
+        <h3>Welcome Message (Audio)</h3>
+        <audio controls>
+          <source
+            src="./audio/audioatlant-revolution-epic-action-cinematic-trailer-short-1-494839.mp3"
+            type="audio/mp3" />
+
+          <source src="./audio/audioatlant-revolution-epic-action-cinematic-trailer-short-1-494839.mp3" type="audio/ogg" />
+          Your browser does not support the audio element. You can
+          <a href="./audio/audioatlant-revolution-epic-action-cinematic-trailer-short-1-494839.mp3">download the audio file here</a> instead.
+        </audio>
+
+        <h3>Project Demo (Video)</h3>
+        <video controls width="600" height="340">
+          <source
+            src="./video/A_slow-motion,_tracking_arc_shot_202607281554.mp4"
+            type="video/mp4" />
+
+            <source src="./video/A_slow-motion,_tracking_arc_shot_202607281554.webm" type="video/webm">
+                    Your browser does not support the video tag. You can <a href="./video/A_slow-motion,_tracking_arc_shot_202607281554.mp4">download the project demo video</a> to view it locally.
+                </video>
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Daniel Chuba. Built with HTML5 and CSS.</p>
+    </footer>
+  </body>
+</html>
